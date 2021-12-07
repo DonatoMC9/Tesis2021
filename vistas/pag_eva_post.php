@@ -103,49 +103,97 @@ $data = $resultado->fetchAll(PDO::FETCH_ASSOC);
                     <div class="modal-body">
 
                         <div class="form-group">
+                            <label for="nombres" class="col-form-label">Nombre:</label>
+                            <input type="text" class="form-control" id="nombres"> 
+
                             <label for="ci" class="col-form-label">CI:</label>
-                            <input type="text" class="form-control" id="ci">
+                            <input type="text" class="form-control" id="ci">                                                       
                         </div>
 
 
-                        <!-- Primera variable -->
+                        <!-- 1ra variable -->
                         <div class="slidecontainer">
-                            <label for="form_acad" class="col-form-label">Formación Academica:</label><br>                            
+                            <label for="form_acad" class="col-form-label">Facilidad de comunicación:</label><br>                            
                             <label text-align="center">Baja....................................................................................................................Alta</label>
-                            <input type="range" min="1" max="100" value="50" class="slider" id="form_acad">
-                            <!--
-                            <p>Value: <span id="demo"></span></p>
-                            -->
+                            <input type="range" min="1" max="100" value="1" class="slider" id="faci_com">                            
                         </div>
-
-                        <!-- Script para mostrar el valor de la Barra
-                        <script>
-                            var slider = document.getElementById("myRange");
-                            var output = document.getElementById("demo");
-                            output.innerHTML = slider.value;
-
-                            slider.oninput = function() {
-                                output.innerHTML = this.value;
-                            }
-                        </script>
-                        -->
-                        
+                                              
                         <!-- 2da Variable -->
                         <div class="slidecontainer">
-                            <label for="exp_gral" class="col-form-label">Experiencia laboral general:</label>
+                            <label for="exp_gral" class="col-form-label">Vocación:</label>
                             <label text-align="center">Baja....................................................................................................................Alta</label>
-                            <input type="range" min="1" max="100" value="50" class="slider" id="exp_gral">
+                            <input type="range" min="1" max="100" value="1" class="slider" id="voc">
                         </div>
 
                         <!-- 3ra Variable -->
                         <div class="slidecontainer">
-                            <label for="exp_area" class="col-form-label">Experiencia en el área:</label>
+                            <label for="exp_area" class="col-form-label">Aprendizaje:</label>
                             <label text-align="center">Baja....................................................................................................................Alta</label>
-                            <input type="range" min="1" max="100" value="50" class="slider" id="exp_area">
+                            <input type="range" min="1" max="100" value="1" class="slider" id="aprendi">
                         </div>
 
-                                               
+                        <!-- 4ta variable -->
+                        <div class="slidecontainer">
+                            <label for="form_acad" class="col-form-label">Valores:</label><br>                            
+                            <label text-align="center">Baja....................................................................................................................Alta</label>
+                            <input type="range" min="1" max="100" value="1" class="slider" id="val">                            
+                        </div>
+                                              
+                        <!-- 5ta Variable -->
+                        <div class="slidecontainer">
+                            <label for="exp_gral" class="col-form-label">Moral:</label>
+                            <label text-align="center">Baja....................................................................................................................Alta</label>
+                            <input type="range" min="1" max="100" value="1" class="slider" id="moral">
+                        </div>
 
+                        <!-- 6ta Variable -->
+                        <div class="slidecontainer">
+                            <label for="exp_area" class="col-form-label">Legalidad:</label>
+                            <label text-align="center">Baja....................................................................................................................Alta</label>
+                            <input type="range" min="1" max="100" value="1" class="slider" id="legal">
+                        </div>  
+                        
+                        <!-- 7ma variable -->
+                        <div class="slidecontainer">
+                            <label for="form_acad" class="col-form-label">Indiferencia:</label><br>                            
+                            <label text-align="center">Baja....................................................................................................................Alta</label>
+                            <input type="range" min="1" max="100" value="1" class="slider" id="indif">                            
+                        </div>
+                                              
+                        <!-- 8va Variable -->
+                        <div class="slidecontainer">
+                            <label for="exp_gral" class="col-form-label">Corrupción:</label>
+                            <label text-align="center">Baja....................................................................................................................Alta</label>
+                            <input type="range" min="1" max="100" value="1" class="slider" id="corrup">
+                        </div>
+
+                        <!-- 9na Variable -->
+                        <div class="slidecontainer">
+                            <label for="exp_area" class="col-form-label">Interes Económico:</label>
+                            <label text-align="center">Baja....................................................................................................................Alta</label>
+                            <input type="range" min="1" max="100" value="1" class="slider" id="int_eco">
+                        </div>
+
+                        <!-- 10ma variable -->
+                        <div class="slidecontainer">
+                            <label for="form_acad" class="col-form-label">Interés Político:</label><br>                            
+                            <label text-align="center">Baja....................................................................................................................Alta</label>
+                            <input type="range" min="1" max="100" value="1" class="slider" id="int_pol">                            
+                        </div>
+                                              
+                        <!-- 11ra Variable -->
+                        <div class="slidecontainer">
+                            <label for="exp_gral" class="col-form-label">Interés Social:</label>
+                            <label text-align="center">Baja....................................................................................................................Alta</label>
+                            <input type="range" min="1" max="100" value="1" class="slider" id="int_soc">
+                        </div>
+
+                        <!-- 12da Variable -->
+                        <div class="slidecontainer">
+                            <label for="exp_area" class="col-form-label">Interés Religioso:</label>
+                            <label text-align="center">Baja....................................................................................................................Alta</label>
+                            <input type="range" min="1" max="100" value="1" class="slider" id="int_rel">
+                        </div>
 
                     </div>
                     <div class="modal-footer">

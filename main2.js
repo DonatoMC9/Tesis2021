@@ -34,7 +34,7 @@ $(document).ready(function () {
       id = parseInt(fila.find('td:eq(0)').text());
       ci = parseInt(fila.find('td:eq(1)').text());
 
-      //nombres = fila.find('td:eq(2)').text();
+      nombres = fila.find('td:eq(2)').text();
       //ape_paterno = fila.find('td:eq(3)').text();
       //ape_materno = fila.find('td:eq(4)').text();
       //genero = fila.find('td:eq(5)').text();
@@ -43,7 +43,7 @@ $(document).ready(function () {
   
       $('#ci').val(ci);
 
-      //$('#nombres').val(nombres);
+      $('#nombres').val(nombres);
       //$('#ape_paterno').val(ape_paterno);
       //$('#ape_materno').val(ape_materno);
       //$('#genero').val(genero);
